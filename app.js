@@ -27,7 +27,6 @@ if (computerChoice === 1) {
 }
 console.log(computerMessage);
 
-// Tie
 if (playerChoice == choice[0] && computerChoice == 1) {
   console.log("it is a tie, you both chose rock");
 } else if (playerChoice == choice[1] && computerChoice == 2) {
