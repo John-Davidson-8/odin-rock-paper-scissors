@@ -18,6 +18,7 @@ if (playerChoice === choice[0]) {
 console.log(playerMessage);
 
 let computerChoice = Math.floor(Math.random() * 3);
+console.log(computerChoice);
 if (computerChoice === 1) {
   computerMessage = "computer chose rock";
 } else if (computerChoice === 2) {
