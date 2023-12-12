@@ -28,26 +28,22 @@ if (computerChoice === 1) {
 console.log(computerMessage);
 
 // Tie
-if (
-  (playerChoice == choice[0] && computerChoice == 1) ||
-  (playerChoice == choice[1] && computerChoice == 2) ||
-  (playerChoice == choice[2] && computerChoice == 3)
-) {
-  console.log("It is a tie");
-}
-// Player wins
-else if (playerChoice == choice[0] && computerChoice == 3) {
+if (playerChoice == choice[0] && computerChoice == 1) {
+  console.log("it is a tie, you both chose rock");
+} else if (playerChoice == choice[1] && computerChoice == 2) {
+  console.log("it is a tie, you both chose paper");
+} else if (playerChoice == choice[2] && computerChoice == 3) {
+  console.log("it is a tie, you both chose scissors");
+} else if (playerChoice == choice[0] && computerChoice == 3) {
   console.log("You win! Rock beats Scissors!");
 } else if (playerChoice == choice[1] && computerChoice == 1) {
   console.log("You win! Paper beats rock!");
 } else if (playerChoice == choice[2] && computerChoice == 2) {
   console.log("You win scissors beats paper");
-
-  // Computer wins
 } else if (playerChoice == choice[0] && computerChoice == 2) {
   console.log("You lose! Paper beats rock");
 } else if (playerChoice == choice[1] && computerChoice == 3) {
   console.log("You lose! Scissors beats paper");
-} else if (playerChoice == choice[2] && computerChoice == 1) {
+} else {
   console.log("You lose! Rock beats scissors");
 }
