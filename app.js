@@ -17,8 +17,8 @@ if (playerChoice === choice[0]) {
 }
 console.log(playerMessage);
 
-let computerChoice = Math.floor(Math.random() * 3);
-console.log(computerChoice);
+let computerChoice = Math.floor(Math.random() * 4);
+// console.log(computerChoice);
 if (computerChoice === 1) {
   computerMessage = "computer chose rock";
 } else if (computerChoice === 2) {
@@ -27,6 +27,7 @@ if (computerChoice === 1) {
   computerMessage = "computer chose scissors";
 }
 console.log(computerMessage);
+// console.log(playerChoice, computerChoice);
 
 if (playerChoice == choice[0] && computerChoice == 1) {
   console.log("it is a tie, you both chose rock");
