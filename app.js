@@ -17,33 +17,27 @@ if (playerChoice === choice[0]) {
 }
 console.log(playerMessage);
 
-let computerChoice = Math.floor(Math.random() * 4);
-// console.log(computerChoice);
-if (computerChoice === 1) {
+let computerChoice = Math.floor(Math.random() * 3);
+if (computerChoice === 0) {
   computerMessage = "computer chose rock";
-} else if (computerChoice === 2) {
+} else if (computerChoice === 1) {
   computerMessage = "computer chose paper";
 } else {
   computerMessage = "computer chose scissors";
 }
 console.log(computerMessage);
-// console.log(playerChoice, computerChoice);
 
-if (playerChoice == choice[0] && computerChoice == 1) {
-  console.log("it is a tie, you both chose rock");
-} else if (playerChoice == choice[1] && computerChoice == 2) {
-  console.log("it is a tie, you both chose paper");
-} else if (playerChoice == choice[2] && computerChoice == 3) {
-  console.log("it is a tie, you both chose scissors");
-} else if (playerChoice == choice[0] && computerChoice == 3) {
-  console.log("You win! Rock beats Scissors!");
-} else if (playerChoice == choice[1] && computerChoice == 1) {
-  console.log("You win! Paper beats rock!");
-} else if (playerChoice == choice[2] && computerChoice == 2) {
-  console.log("You win scissors beats paper");
+if (playerChoice == computerChoice) {
+  console.log("It is a tie!");
 } else if (playerChoice == choice[0] && computerChoice == 2) {
+  console.log("You win! Rock beats Scissors!");
+} else if (playerChoice == choice[1] && computerChoice == 0) {
+  console.log("You win! Paper beats rock!");
+} else if (playerChoice == choice[2] && computerChoice == 1) {
+  console.log("You win scissors beats paper");
+} else if (playerChoice == choice[0] && computerChoice == 0) {
   console.log("You lose! Paper beats rock");
-} else if (playerChoice == choice[1] && computerChoice == 3) {
+} else if (playerChoice == choice[1] && computerChoice == 2) {
   console.log("You lose! Scissors beats paper");
 } else {
   console.log("You lose! Rock beats scissors");
