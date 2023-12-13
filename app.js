@@ -15,6 +15,7 @@ if (playerChoice === choice[0]) {
 } else {
   playerMessage = "You have to choose between rock, paper or scissors!";
 }
+console.log(playerChoice);
 console.log(playerMessage);
 
 let computerChoice = Math.floor(Math.random() * 3);
@@ -25,10 +26,15 @@ if (computerChoice === 0) {
 } else {
   computerMessage = "computer chose scissors";
 }
+console.log(computerChoice);
 console.log(computerMessage);
 
-if (playerChoice == computerChoice) {
-  console.log("It is a tie!");
+if (playerChoice == choice[0] && computerChoice == 0) {
+  console.log("It is a tie! You both chose rock");
+} else if (playerChoice == choice[1] && computerChoice == 1) {
+  console.log("It is a tie!, you both chose paper");
+} else if (playerChoice == choice[2] && computerChoice == 2) {
+  console.log("It is a Tie! You both chose scissors");
 } else if (playerChoice == choice[0] && computerChoice == 2) {
   console.log("You win! Rock beats Scissors!");
 } else if (playerChoice == choice[1] && computerChoice == 0) {
